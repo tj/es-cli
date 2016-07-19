@@ -12,7 +12,7 @@ func size(n float64) string {
 	return humanize.Bytes(uint64(n))
 }
 
-func nodes(client *es.Client) {
+func nodesMemory(client *es.Client) {
 	stats, err := client.NodeStats()
 	if err != nil {
 		log.Fatalf("error: %s", err)

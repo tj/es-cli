@@ -17,10 +17,10 @@ First assign __ES_ADDR__:
 export ES_ADDR=http://localhost:5555
 ```
 
-## Node Stats
+## Nodes Memory
 
 ```
-$ es nodes
+$ es nodes memory
 
 Ronan the Accuser
 

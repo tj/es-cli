@@ -12,7 +12,7 @@ var version = "0.0.1"
 
 var usage = `
   Usage:
-    es nodes
+    es nodes memory
     es -h | --help
     es --version
 
@@ -30,7 +30,7 @@ func main() {
 	client := es.New(env.MustGet("ES_ADDR"))
 
 	switch {
-	case args["nodes"].(bool):
-		nodes(client)
+	case args["nodes"].(bool) && args["memory"].(bool):
+		nodesMemory(client)
 	}
 }
