@@ -6,7 +6,7 @@ Elasticsearch stats CLI, at least the start of one.
 ## Installation
 
 ```
-$ go get github.com/tj/es
+$ go get github.com/tj/es/cmd/es
 ```
 
 ## Setup
